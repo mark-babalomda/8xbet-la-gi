@@ -4,14 +4,14 @@
 
   --bs-primary: #2F5991;
   --bs-primary-hover: #2F5991;
-  --bg-light: #EFFCFD;
+  --bg-light: #d6c3ef58;
   --bs-link-color: #2F5991;
 }
 .color-yellow{
   color: #f4f43d;
 }
 .bg-dark{
-  background-color: #5CE1E8 !important;
+  background-color: #4f9ae092 !important;
 }
 .bg-light{
   background-color: var(--bg-light) !important;
@@ -147,4 +147,37 @@ header.masthead .masthead-heading {
   text-align: center;
   font-size: 0.9rem;
   font-family: "Rubik", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.numbered-list {
+  counter-reset: list-counter; 
+}
+.numbered-list li {
+  list-style: none; 
+  position: relative; 
+  padding-left: 3rem; 
+  margin-bottom: 1.5rem; 
+}
+.numbered-list li::before {
+  content: counter(list-counter); 
+  counter-increment: list-counter; 
+  position: absolute; 
+  left: 0; 
+  top: 50%; 
+  transform: translateY(-50%); 
+  width: 2rem; 
+  height: 2rem; 
+  border-radius: 50%; 
+  background-color: var(--bs-primary); 
+  color: #f4f43d; 
+  font-size: 1.25rem; 
+  font-weight: bold; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+}
+.numbered-list h3 {
+  margin-bottom: 0.5rem; 
+}
+.numbered-list p {
+  margin-bottom: 0; 
 }
