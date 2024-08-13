@@ -4,13 +4,13 @@
 
   --bs-primary: #2F5991;
   --bs-primary-hover: #2F5991;
-  --bg-light: #4F99E0;
+  --bg-light: #15888D;
   --bs-link-color: #2F5991;
   --bs-yellow: #f4f43d;
 }
 
 .bg-dark{
-  background-color: #4f9ae092 !important;
+  background-color: #0C6CC0 !important;
 }
 .bg-light{
   background-color: var(--bg-light) !important;
@@ -38,6 +38,9 @@ body, .text-muted {
 a{
   color: var(--bs-yellow);
   text-decoration: none;
+}
+.card a{
+  color: var(--bs-primary)
 }
 p {
   line-height: 1.75;
@@ -95,7 +98,7 @@ p {
 }
 
 #mainNav .navbar-brand {
-  color: var(--bs-primary);
+  color: var(--bs-yellow);
   font-family: "Rubik", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
   letter-spacing: 0.0625em;
@@ -105,7 +108,7 @@ p {
 header.masthead {
   padding: 4rem 0.5rem;
   text-align: center;
-  color: #212529;
+  color: var(--bs-yellow);
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -143,7 +146,7 @@ header.masthead .masthead-heading {
 }
 
 .footer {
-  color: #212529 !important;
+  color: var(--bs-yellow) !important;
   text-align: center;
   font-size: 0.9rem;
   font-family: "Rubik", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
